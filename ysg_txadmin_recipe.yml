@@ -1,11 +1,14 @@
-name: YSG RedM Framework OX-Based
+name: YSG RedM Framework (OX-Based)
 author: YoshiGaming
+description: >
+  Western-themed RedM roleplay framework built on ox_core with custom jobs, inventory, crafting, horses, law, crime, jail, and radial menu.
+
 version: 1.0.0
 
 tasks:
   - action: download_file
     args:
-      url: https://github.com/yoshigonemadgaming72-web/YSG-Framework/releases/download/v1.0.0/YSG_Framework_OXBased.zip
+      url: https://github.com/yoshigonemadgaming72-web/YSG-Framework/edit/main/ysg_txadmin_recipe.yml
       path: ./resources/YSG_Framework_OXBased.zip
 
   - action: unzip_file
@@ -42,3 +45,12 @@ tasks:
       - ysg_adminpanel
       - discord_logger
       - rate_limiter
+
+  - action: comment
+    args: |
+      ✅ YSG Framework installed!
+      📋 Review server.cfg and edit database connection settings.
+      👮 Jobs available: Sheriff, Rancher, Trapper, Doctor, Blacksmith, Outlaw.
+      🐴 Use radial menu to summon horses and access emotes.
+      🔨 Craft at blacksmith or trapper camps via ox_target zones.
+      🧪 Customize items in /resources/sql/ysg_items.json or crafting_recipes.json
