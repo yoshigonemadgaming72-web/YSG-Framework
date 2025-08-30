@@ -1,0 +1,44 @@
+name: YSG RedM Framework OX-Based
+author: YoshiGaming
+version: 1.0.0
+
+tasks:
+  - action: download_file
+    args:
+      url: https://github.com/yoshigonemadgaming72-web/YSG-Framework/releases/download/v1.0.0/YSG_Framework_OXBased.zip
+      path: ./resources/YSG_Framework_OXBased.zip
+
+  - action: unzip_file
+    args:
+      src: ./resources/YSG_Framework_OXBased.zip
+      dest: ./resources/
+
+  - action: ensure
+    args:
+      - ox_core
+      - ox_inventory
+      - ox_lib
+      - ox_target
+      - ox_doorlock
+      - ysg_inventory
+      - ysg_hud
+      - ysg_radialmenu
+      - ysg_characterselect
+      - ysg_jobs
+      - ysg_stables
+      - ysg_horses
+      - ysg_bathing
+      - ysg_crafting
+      - ysg_crime
+      - ysg_jail
+      - ysg_medic
+      - ysg_lawman
+      - ysg_lumber
+      - ysg_mining
+      - ysg_butcher
+      - ysg_trapper
+      - ysg_clothing
+      - ysg_barbershop
+      - ysg_adminpanel
+      - discord_logger
+      - rate_limiter
