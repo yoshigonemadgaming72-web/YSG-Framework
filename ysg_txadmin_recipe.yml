@@ -6,12 +6,12 @@ tasks:
   - action: download_file
     args:
       url: https://github.com/yoshigonemadgaming72-web/YSG-Framework/releases/download/v1.0.0/YSG_Framework_OXBased.zip
-      path: ./resources/YSG_Framework_OXBased.zip
+      path: resources/YSG_Framework_OXBased.zip
 
   - action: unzip_file
     args:
-      src: ./resources/YSG_Framework_OXBased.zip
-      dest: ./resources/
+      src: resources/YSG_Framework_OXBased.zip
+      dest: resources/
 
   - action: ensure
     args:
